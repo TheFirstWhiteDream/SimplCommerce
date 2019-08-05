@@ -20,7 +20,6 @@ namespace SimplCommerce.Infrastructure.Helpers
             {
                 return false;
             }
-
             return type.GetGenericTypeDefinition() == typeof(Func<>);
         }
 
