@@ -1,0 +1,6 @@
+{
+  "id": "SimplCommerce.Module.PaymentPaypalSmart",
+  "name": "Paypal Smart Payment",
+  "isBundledWithHost": true,
+  "version": "1.0.0"
+}

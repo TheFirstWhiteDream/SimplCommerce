@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor" ToolsVersion="Current">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SimplCommerce.Infrastructure\SimplCommerce.Infrastructure.csproj" />
+    <ProjectReference Include="..\SimplCommerce.Module.Core\SimplCommerce.Module.Core.csproj" />
+    <ProjectReference Include="..\SimplCommerce.Module.Payments\SimplCommerce.Module.Payments.csproj" />
+  </ItemGroup>
+</Project>

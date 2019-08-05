@@ -1,0 +1,43 @@
+﻿@model SimplCommerce.Module.PaymentPaypalSmart.Models.PaypalSmartSettings
+
+<div id="paypal-button"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=@(Model.ClientId)"></script>
+
+<script>
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
+
+        // Set up the transaction
+        createOrder: function (data, actions) {
+            return fetch('/PaypalSmart/CreatePayment', {
+                method: 'post'
+            }).then(function (res) {
+                return res.json();
+            }).then(function (data) {
+                return data.orderID;
+            }) .catch(function (error) {
+                var errorDiv = document.getElementById("paymentError");
+                errorDiv.innerText = error
+                errorDiv.style.display = "block";
+            });;
+        },
+
+        onApprove: function (data, actions) {
+            return fetch('/PaypalSmart/ExecutePayment/' + data.orderID, {
+                method: 'post'
+            }).then(function (res) {
+                return res.json();
+            }).then(function (details) {
+                // Show a success message to the buyer
+               window.location = "/checkout/success?orderId=" + details.orderId;
+            }) .catch(function (error) {
+                var errorDiv = document.getElementById("paymentError");
+                errorDiv.innerText = error
+                errorDiv.style.display = "block";
+            });
+        }
+
+
+    }).render('#paypal-button');
+</script>

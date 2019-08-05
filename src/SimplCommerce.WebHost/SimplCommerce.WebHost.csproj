@@ -34,6 +34,7 @@
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentCashfree\SimplCommerce.Module.PaymentCashfree.csproj" />
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentCoD\SimplCommerce.Module.PaymentCoD.csproj" />
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentPaypalExpress\SimplCommerce.Module.PaymentPaypalExpress.csproj" />
+    <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentPaypalSmart\SimplCommerce.Module.PaymentPaypalSmart.csproj" />
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentStripe\SimplCommerce.Module.PaymentStripe.csproj" />
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentMomo\SimplCommerce.Module.PaymentMomo.csproj" />
     <ProjectReference Include="..\Modules\SimplCommerce.Module.PaymentNganLuong\SimplCommerce.Module.PaymentNganLuong.csproj" />

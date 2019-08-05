@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/admin/paymentpaypalsmart.min.js",
+    "inputFiles": [
+      "wwwroot/admin/paypalSmart.module.js",
+      "wwwroot/admin/config/paypalSmart-service.js",
+      "wwwroot/admin/config/config-form.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]
